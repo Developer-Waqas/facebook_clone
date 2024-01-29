@@ -7,3 +7,9 @@ TextStyle appBarTextStyle = TextStyle(
     fontWeight: FontWeight.bold,
     fontSize: 28
 );
+
+TextStyle searchTextStyle = TextStyle(
+    color: black,
+    fontWeight: FontWeight.bold,
+    fontSize: 15
+);

@@ -1,16 +1,17 @@
+import 'package:facebook_clone/screens/main_screen/home_screen/home_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../constants/app_color/app_color.dart';
 import '../../constants/app_style/app_style.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+class MainScreen extends StatefulWidget {
+  const MainScreen({super.key});
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<MainScreen> createState() => _MainScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -64,50 +65,45 @@ class _HomeScreenState extends State<HomeScreen> {
             Tab(
               child: Icon(
                 Icons.home,
-                color: grey,
+                color: black,
                 size: 30,
               ),
             ),
             Tab(
                 child: Icon(
               Icons.person_add_alt_1_sharp,
-              color: grey,
+              color: black,
               size: 30,
             )),
             Tab(
                 child: Icon(
               Icons.live_tv_rounded,
-              color: grey,
+              color: black,
               size: 30,
             )),
             Tab(
                 child: Icon(
               Icons.shop_sharp,
-              color: grey,
+              color: black,
               size: 30,
             )),
             Tab(
                 child: Icon(
               Icons.notifications,
-              color: grey,
+              color: black,
               size: 30,
             )),
             Tab(
                 child: Icon(
-              Icons.list_outlined,
-              color: grey,
+              Icons.menu,
+              color: black,
               size: 30,
             )),
           ]),
         ),
         body: const TabBarView(
           children: [
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Center(child: Text('Home Screen'))
-              ],
-            ),
+            HomeScreen(),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
