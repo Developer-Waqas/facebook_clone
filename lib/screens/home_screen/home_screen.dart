@@ -86,12 +86,12 @@ class _HomeScreenState extends State<HomeScreen> {
               color: grey,
               size: 30,
             )),
-            Tab(
-                child: Icon(
-              Icons.notifications,
-              color: grey,
-              size: 30,
-            )),
+            // Tab(
+            //     child: Icon(
+            //   Icons.notifications,
+            //   color: grey,
+            //   size: 30,
+            // )),
             Tab(
                 child: Icon(
               Icons.list_outlined,
@@ -100,7 +100,7 @@ class _HomeScreenState extends State<HomeScreen> {
             )),
           ]),
         ),
-        body: TabBarView(
+        body: const TabBarView(
           children: [
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
