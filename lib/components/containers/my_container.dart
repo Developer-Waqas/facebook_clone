@@ -24,13 +24,15 @@ class MyContainer extends StatelessWidget {
           borderRadius: BorderRadius.circular(12),
         ),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Center(child: Icon(icon,size: 60,)),
-            SizedBox(height: 110,),
+            Center(child: Icon(icon,size: 100,)),
+            SizedBox(height: 70,),
             Text(name,
             style: usersNameTextStyle,
             ),
+            SizedBox(height: 20,),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -40,7 +42,16 @@ class MyContainer extends StatelessWidget {
                   color: blue,
                   icon: Icons.person_add_alt_1,
                   name: 'Add friend',
-                )
+                ),
+                Container(
+                  height: 34,
+                  width: 80,
+                  decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  child: Center(child: Text('Remove',style: searchTextStyle,)),
+                ),
               ],
             )
           ],

@@ -28,26 +28,29 @@ class MyButtons extends StatefulWidget {
 class _MyButtonsState extends State<MyButtons> {
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap:(){},
-      hoverColor: Colors.green,
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 5),
-        height: widget.height,
-        width: widget.width,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(5),
-          color: widget.color,
-        ),
-        child: Row(
-          children: [
-            Icon(widget.icon),
-            Center(
-              child: Text(widget.name,
-              style: searchTextStyle,
+    return Ink(
+      child: InkWell(
+        onTap:(){},
+        hoverColor: Colors.green,
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 5),
+          height: widget.height,
+          width: widget.width,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(5),
+            color: widget.color,
+          ),
+          child: Row(
+            children: [
+              Center(child: Icon(widget.icon)),
+              const SizedBox(width: 3,),
+              Center(
+                child: Text(widget.name,
+                style: searchTextStyle,
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
