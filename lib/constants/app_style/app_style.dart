@@ -13,3 +13,9 @@ TextStyle searchTextStyle = TextStyle(
     fontWeight: FontWeight.bold,
     fontSize: 15
 );
+
+TextStyle usersNameTextStyle = TextStyle(
+    color: black,
+    fontWeight: FontWeight.bold,
+    fontSize: 20
+);
