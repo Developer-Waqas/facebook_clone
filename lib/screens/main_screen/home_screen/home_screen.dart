@@ -1,7 +1,9 @@
-import 'package:facebook_clone/components/containers/my_container.dart';
+import 'package:facebook_clone/components/containers/user_container.dart';
 import 'package:facebook_clone/constants/app_color/app_color.dart';
 import 'package:facebook_clone/constants/app_style/app_style.dart';
 import 'package:flutter/material.dart';
+
+import '../../../components/containers/my_container.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -47,10 +49,9 @@ class _HomeScreenState extends State<HomeScreen> {
             const SizedBox(
               height: 5,
             ),
-            Container(
-              height: 7,
-              width: double.infinity,
-              decoration: BoxDecoration(color: Colors.grey[500]),
+            Divider(
+              thickness: 10,
+              color: Colors.grey[500],
             ),
             const SizedBox(
               height: 10,
@@ -64,76 +65,83 @@ class _HomeScreenState extends State<HomeScreen> {
                     'People you may know',
                     style: searchTextStyle,
                   ),
-                  Text(
-                    'See all',
-                    style: TextStyle(color: black),
-                  ),
+                  const Icon(Icons.more_horiz)
                 ],
               ),
             ),
             const SizedBox(
               height: 5,
             ),
+
+            ///<<<<===== Friend data ========>>>>>>>>>
             Expanded(
               child: GridView.count(
-                mainAxisSpacing: 7,
+                mainAxisSpacing: 2,
                 crossAxisCount: 1,
                 scrollDirection: Axis.horizontal,
                 children: [
-                  MyContainer(
+                  UserNameContainer(
                     name: 'Waqas Muhammad',
                     icon: Icons.person,
                   ),
-                  MyContainer(
+                  UserNameContainer(
                     name: 'Waqar Ahmad',
                     icon: Icons.person,
                   ),
-                  MyContainer(
-                    name: 'Aizah Khan',
+                  UserNameContainer(
+                    name: 'Reshma',
                     icon: Icons.person_2_sharp,
                   ),
-                  MyContainer(
+                  UserNameContainer(
                     name: 'Abdur Razzaq',
                     icon: Icons.person,
                   ),
-                  MyContainer(
+                  UserNameContainer(
                     name: 'Haris',
                     icon: Icons.person,
                   ),
-                  MyContainer(
-                    name: 'Yumna Zaidi',
+                  UserNameContainer(
+                    name: 'Komal Mer',
                     icon: Icons.person_2_sharp,
                   ),
-                  MyContainer(
+                  UserNameContainer(
                     name: 'Muhammad Eisa',
                     icon: Icons.person,
                   ),
-                  MyContainer(
+                  UserNameContainer(
                     name: 'Muhammad Usman',
                     icon: Icons.person,
-                  ),MyContainer(
-                    name: 'Dur e Fishan',
+                  ),
+                  UserNameContainer(
+                    name: 'Alena Bibi',
                     icon: Icons.person_2_sharp,
                   ),
-                  MyContainer(
+                  UserNameContainer(
                     name: 'Muhammad Hasnain',
                     icon: Icons.person,
                   ),
-                  MyContainer(
+                  UserNameContainer(
                     name: 'Muhammad Anas',
                     icon: Icons.person,
                   ),
-                  MyContainer(
-                    name: 'Saher Khan',
+                  UserNameContainer(
+                    name: 'Iqra Bibi',
                     icon: Icons.person_2_sharp,
                   ),
                 ],
               ),
             ),
-            Expanded(
+            const SizedBox(height: 5,),
+            Divider(
+              thickness: 10,
+              color: Colors.grey[500],
+            ),
+            const Expanded(
               child: Column(
                 children: [
-        
+                  SizedBox(height: 10,),
+                  
+                  ///UserPosts=============
                 ],
               ),
             ),
