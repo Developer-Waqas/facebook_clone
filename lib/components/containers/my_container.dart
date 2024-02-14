@@ -19,7 +19,7 @@ class UserNameContainer extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 10),
       child: Container(
-        height: 150,
+        height: 200,
         width: 120,
         decoration: BoxDecoration(
           border: Border.all(
@@ -80,7 +80,7 @@ class UserNameContainer extends StatelessWidget {
               ],
             ),
             const SizedBox(
-              height: 10,
+              height: 4,
             ),
           ],
         ),

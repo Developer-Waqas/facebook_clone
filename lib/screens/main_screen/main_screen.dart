@@ -15,6 +15,7 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
+      animationDuration: Duration(milliseconds: 700),
       length: 6,
       child: Scaffold(
         appBar: AppBar(
@@ -65,38 +66,38 @@ class _MainScreenState extends State<MainScreen> {
             Tab(
               child: Icon(
                 Icons.home,
-                color: black,
+                color: blue,
                 size: 30,
               ),
             ),
             Tab(
                 child: Icon(
               Icons.person_add_alt_1_sharp,
-              color: black,
+              color: blue,
               size: 30,
             )),
             Tab(
                 child: Icon(
               Icons.live_tv_rounded,
-              color: black,
+              color: blue,
               size: 30,
             )),
             Tab(
                 child: Icon(
               Icons.shop_sharp,
-              color: black,
+              color: blue,
               size: 30,
             )),
             Tab(
                 child: Icon(
               Icons.notifications,
-              color: black,
+              color: blue,
               size: 30,
             )),
             Tab(
                 child: Icon(
               Icons.menu,
-              color: black,
+              color: blue,
               size: 30,
             )),
           ]),

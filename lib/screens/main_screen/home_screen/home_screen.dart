@@ -2,7 +2,6 @@ import 'package:facebook_clone/components/containers/user_container.dart';
 import 'package:facebook_clone/constants/app_color/app_color.dart';
 import 'package:facebook_clone/constants/app_style/app_style.dart';
 import 'package:flutter/material.dart';
-
 import '../../../components/containers/my_container.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -36,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Padding(
                   padding: const EdgeInsets.only(top: 3, left: 12, right: 12),
                   child: Text(
-                    'What\'s on your mind?',
+                    "What's on your mind?",
                     style: searchTextStyle,
                   ),
                 ),
@@ -73,7 +72,7 @@ class _HomeScreenState extends State<HomeScreen> {
               height: 5,
             ),
 
-            ///<<<<===== Friend data ========>>>>>>>>>
+            ///<<<===== Friend data ========>>>>>>>>>
             Expanded(
               child: GridView.count(
                 mainAxisSpacing: 2,
@@ -89,7 +88,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     icon: Icons.person,
                   ),
                   UserNameContainer(
-                    name: 'Reshma',
+                    name: 'Alena',
                     icon: Icons.person_2_sharp,
                   ),
                   UserNameContainer(
@@ -101,7 +100,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     icon: Icons.person,
                   ),
                   UserNameContainer(
-                    name: 'Komal Mer',
+                    name: 'Alyana',
                     icon: Icons.person_2_sharp,
                   ),
                   UserNameContainer(
@@ -113,7 +112,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     icon: Icons.person,
                   ),
                   UserNameContainer(
-                    name: 'Alena Bibi',
+                    name: 'Aizal',
                     icon: Icons.person_2_sharp,
                   ),
                   UserNameContainer(
@@ -125,23 +124,28 @@ class _HomeScreenState extends State<HomeScreen> {
                     icon: Icons.person,
                   ),
                   UserNameContainer(
-                    name: 'Iqra Bibi',
+                    name: 'Iqra',
                     icon: Icons.person_2_sharp,
                   ),
                 ],
               ),
             ),
-            const SizedBox(height: 5,),
+            const SizedBox(
+              height: 5,
+            ),
             Divider(
               thickness: 10,
               color: Colors.grey[500],
             ),
-            const Expanded(
+            Expanded(
+              flex:2,
               child: Column(
                 children: [
-                  SizedBox(height: 10,),
-                  
-                  ///UserPosts=============
+                  ///<<<<<<=========UserPosts=============>>>>>>>>
+                  UserContainer(
+                      image: AssetImage('assets/images/profile.png'),
+                      userName: 'Waqas',
+                      time: '2h ago'),
                 ],
               ),
             ),
